@@ -1,0 +1,16 @@
+<UserControl x:Class="CommunicationProtocol.WPF.Views.ProtocolViews.ModbusView"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid Margin="10">
+<StackPanel>
+<TextBlock Text="Modbus TCP Settings" FontWeight="Bold" Margin="0,0,0,10"/>
+<TextBlock Text="IP Address:"/>
+<TextBox Text="{Binding Ip}" Width="150" Margin="0,0,0,5"/>
+<TextBlock Text="Port:"/>
+<TextBox Text="{Binding Port}" Width="150" Margin="0,0,0,5"/>
+<TextBlock Text="Slave ID:"/>
+<TextBox Text="{Binding SlaveId}" Width="150" Margin="0,0,0,5"/>
+<TextBlock Text="{Binding Status}" Foreground="Green" Margin="0,10,0,0"/>
+</StackPanel>
+</Grid>
+</UserControl>
