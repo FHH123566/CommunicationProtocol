@@ -1,0 +1,13 @@
+<UserControl x:Class="CommunicationProtocol.WPF.Views.ProtocolViews.OpcUaView"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid Margin="10">
+<StackPanel>
+<TextBlock Text="OPC UA Settings" FontWeight="Bold" Margin="0,0,0,10"/>
+<TextBlock Text="Endpoint URL:"/>
+<TextBox Text="{Binding EndpointUrl}" Width="250" Margin="0,0,0,5"/>
+<CheckBox IsChecked="{Binding UseSecurity}" Content="Use Security" Margin="0,0,0,5"/>
+<TextBlock Text="{Binding Status}" Foreground="Green" Margin="0,10,0,0"/>
+</StackPanel>
+</Grid>
+</UserControl>
