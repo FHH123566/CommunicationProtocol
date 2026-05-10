@@ -1,0 +1,22 @@
+<Window x:Class="CommunicationProtocol.WPF.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:vm="clr-namespace:CommunicationProtocol.WPF.ViewModels"
+xmlns:v="clr-namespace:CommunicationProtocol.WPF.Views"
+Title="Communication Protocol Tool" Height="600" Width="900"
+WindowStartupLocation="CenterScreen">
+<Window.DataContext>
+<vm:MainViewModel/>
+</Window.DataContext>
+<TabControl>
+<TabItem Header="Protocols">
+<v:ProtocolView DataContext="{Binding ProtocolViewModel}"/>
+</TabItem>
+<TabItem Header="Real-time Monitor">
+<v:RealTimeMonitorView DataContext="{Binding MonitorViewModel}"/>
+</TabItem>
+<TabItem Header="Alarms">
+<v:AlarmView DataContext="{Binding AlarmViewModel}"/>
+</TabItem>
+</TabControl>
+</Window>
